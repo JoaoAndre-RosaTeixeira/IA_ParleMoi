@@ -1,0 +1,112 @@
+$primary-color: #007bff;
+$secondary-color: #6c757d;
+
+/* Styles pour le en-tête */
+header {
+  background-color: white;
+  border-bottom: 1px solid #ccc;
+  padding: 20px;
+
+  .logo {
+    display: flex;
+    align-items: center;
+
+    img {
+      height: 50px;
+      margin-right: 10px;
+    }
+
+    h1 {
+      font-size: 28px;
+      color: $primary-color;
+    }
+  }
+
+  ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+
+    li {
+      margin-right: 20px;
+
+      a {
+        color: $secondary-color;
+        text-decoration: none;
+
+        &:hover {
+          color: $primary-color;
+        }
+      }
+    }
+  }
+}
+
+/* Styles pour le corps principal */
+main {
+  .hero {
+    background-color: $primary-color;
+    color: white;
+    padding: 50px;
+    text-align: center;
+
+    h2 {
+      font-size: 36px;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 20px;
+      line-height: 1.5;
+      margin-bottom: 30px;
+    }
+
+    .cta {
+      background-color: white;
+      color: $primary-color;
+      display: inline-block;
+      padding: 10px 20px;
+      border-radius: 5px;
+      text-decoration: none;
+      transition: background-color 0.2s ease;
+
+      &:hover {
+        background-color: #eee;
+      }
+    }
+  }
+
+
+
+  .about {
+    padding: 50px;
+    text-align: center;
+
+    h2 {
+      font-size: 36px;
+      margin-bottom: 30px;
+    }
+
+    p {
+      font-size: 20px;
+      line-height: 1.5;
+      margin-bottom: 30px;
+    }
+
+    .cta {
+      background-color: $primary-color;
+      color: white;
+      display: inline-block;
+      padding: 10px 20px;
+      border-radius: 5px;
+      text-decoration: none;
+      transition: background-color 0.2s ease;
+
+      &:hover {
+        background-color: darken($primary-color, 10%);
+      }
+    }
+  }
+}
+

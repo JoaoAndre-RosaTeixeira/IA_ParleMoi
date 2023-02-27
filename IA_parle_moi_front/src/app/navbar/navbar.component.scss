@@ -1,0 +1,36 @@
+.containerNavbar{
+  width: 100vw;
+  height: 10vh;
+  background-color: black;
+  border-bottom: solid 1px white;
+
+  .navbar{
+
+    width: 100%;
+    height: 100%;
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(3, auto);
+    justify-content: space-around;
+    color: white;
+    .isActive{
+      button{
+        background-color: black;
+        color: white;
+        border: white solid 1px;
+      }
+    }
+    a{
+
+      text-decoration: none;
+      button{
+        color: white;
+        border-radius: 45px;
+      }
+    }
+
+
+
+  }
+}
+

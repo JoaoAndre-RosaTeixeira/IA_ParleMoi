@@ -1,0 +1,98 @@
+.record-button-container {
+  width: 100vw;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-color: black;
+
+  button {
+    background-color: #ddd;
+    border: none;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    font-size: 24px;
+    color: #333;
+    transition: all 0.2s ease-in-out;
+    i {
+      transition: all 0.2s ease-in-out;
+    }
+    &:hover {
+      cursor: pointer;
+      background-color: #bbb;
+    }
+    &:active {
+      transform: scale(0.9);
+    }
+  }
+
+
+
+
+
+
+  .record-button {
+    position: relative;
+    padding: 20px;
+    font-size: 30px;
+    cursor: pointer;
+
+    .ripple {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.3);
+      opacity: 0;
+      transform: scale(0);
+      transition: all 0.5s ease-out;
+    }
+    &:active .ripple {
+      opacity: 1;
+      transform: scale(2);
+      transition: all 0.5s ease-out;
+    }
+  }
+
+
+  .wave_play {
+    width: 50vh;
+    height: 50vh;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    background-image: url('/assets/image/wave.gif');
+    background-size: 80vh;
+    background-repeat: no-repeat;
+    background-position: center center;
+    border-radius: 100%;
+    animation: infinite;
+    position: relative;
+    border-width: 3vh;
+
+
+    &:before{
+      content:"";
+      width: 50vh;
+      height: 50vh;
+      position:absolute;
+      background-image: url('/assets/image/wave.gif');
+      background-size: 110vh;
+      border-radius: 100%;
+      background-repeat: no-repeat;
+      background-position: center center;
+
+      animation: infinite;
+      opacity:0.5;
+
+    }
+
+  }
+}
+

@@ -1,0 +1,8 @@
+<div class="record-button-container">
+  <div class="wave" [class]="isRecording ? 'wave_play' : 'wave_stop'">
+  <button class="record-button" (click)="toggleRecording()">
+    <i class="{{ speaking ? 'fas fa-volume-up' : (isRecording ? 'fas fa-stop' : 'fas fa-play') }} {{ speaking ? 'faa-pulse animated' : '' }}"></i>
+    <div class="ripple"></div>
+  </button>
+  </div>
+</div>
