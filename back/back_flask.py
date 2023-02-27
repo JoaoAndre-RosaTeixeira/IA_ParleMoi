@@ -1,9 +1,6 @@
 import threading
-
-import openai
 from utils.create_mp3 import Mp3Record
 from utils.Open_Ai import OpenAi
-import time
 from flask import Flask, request, jsonify
 from flask_restful import Resource, Api
 from flask_cors import CORS
@@ -11,7 +8,6 @@ from gtts import gTTS
 from io import BytesIO
 from pygame import mixer
 import pyttsx3
-import win32com.client
 
 
 mp3recorder = Mp3Record()
