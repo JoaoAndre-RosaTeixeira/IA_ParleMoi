@@ -10,11 +10,11 @@ from pygame import mixer
 import pyttsx3
 
 
-mp3recorder = Mp3Record()
 
 
 api_key = "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"
 my_model = "text-davinci-003"
+mp3recorder = Mp3Record()
 openai_instance = OpenAi(my_model, api_key)
 
 
@@ -35,6 +35,7 @@ def boucle_recording():
         mp3recorder.recordind()
     print(recording_manage)
 
+
 class stop_record_f(Resource):
     def post(self):
         global recording_manage
@@ -50,7 +51,9 @@ class stop_record_f(Resource):
 
         # Retourner une réponse
         return jsonify({'success': 'Enregistrement arrêté avec succès',
-                        'record': False})
+                        'record': False,
+                        'response': response
+                        })
 
 
     def pyttsx(self, text_res):

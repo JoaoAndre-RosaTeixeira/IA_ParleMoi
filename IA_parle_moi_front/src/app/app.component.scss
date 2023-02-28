@@ -3,3 +3,19 @@
   height: 100vh;
   overflow-x: hidden;
 }
+
+*{
+  &::-webkit-scrollbar {
+    width: 5px; /* width of the entire scrollbar */
+  }
+
+  &::-webkit-scrollbar-track {
+    background: transparent; /* color of the tracking area */
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: rgb(36, 36, 36); /* color of the scroll thumb */
+    border-radius: 1px; /* roundness of the scroll thumb */
+    // border: 1px solid rgb(128, 128, 128); /* creates padding around scroll thumb */
+  }
+}

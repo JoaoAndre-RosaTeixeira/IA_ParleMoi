@@ -25,7 +25,7 @@ class OpenAi:
             print(prompt)
             # Set the maximum number of tokens to generate in the response
             max_tokens = 500
-            # Generate a response
+
             completion = openai.Completion.create(
                 engine=self.model_engine,
                 prompt=prompt,

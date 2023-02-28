@@ -11,8 +11,11 @@ export class ChatBotComponent {
   apiUrl = 'http://localhost:5000/api';
   recordingUrl = `${this.apiUrl}/start_record`;
   stopUrl = `${this.apiUrl}/stop_record`;
+  stopSpeakUrl = `${this.apiUrl}/stop_record`;
   stoprecord: Boolean = false
   speaking: Boolean = false
+  response: any;
+  question: any;
 
   constructor(private http: HttpClient) {
   }
@@ -45,9 +48,12 @@ export class ChatBotComponent {
           console.log(this.isRecording)
           this.isRecording = !this.isRecording;
           this.speaking = false
+          this.response = response.response
           console.log(this.isRecording)
         });
       }
     }
   }
+
+
 }
