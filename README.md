@@ -17,15 +17,22 @@ Clonez le dépôt de l'application sur votre système local
 
 ### Ouvrez un terminal dans le répertoire racine de l'application  
 
-### Créez un environnement virtuel avec la commande suivante :  
+# Assurez-vous que Python 3.10 est installé sur votre système.
 
-python3 -m venv venv
+### Créer un environnement virtuel utilisant spécifiquement Python 3.10, vous pouvez suivre ces étapes:
 
-### Activez l'environnement virtuel avec la commande suivante :  
-source venv/bin/activate  
+### Ouvrez un terminal ou une ligne de commande et tapez la commande suivante pour installer la bibliothèque virtualenv :
+pip install virtualenv  
 
-### Si vous êtes sur Windows, utilisez plutôt :  
-venv\Scripts\activate
+### Ensuite, créez un nouveau dossier pour votre environnement virtuel et accédez-y :  
+mkdir mon_env  
+cd mon_env  
+
+### Créez votre environnement virtuel avec la version spécifique de Python que vous voulez utiliser (3.10) :  
+virtualenv -p python3.10 myenv  
+
+### Activez votre environnement virtuel en exécutant la commande :  
+source myenv/bin/activate  
 
 ## Installez les dépendances Python avec la commande suivante :  
 pip install -r requirements.txt  
