@@ -34,7 +34,7 @@ virtualenv -p python3.10 myenv
 ### Activez votre environnement virtuel en exécutant la commande :  
 source myenv/bin/activate  
 
-## Installez les dépendances Python avec la commande suivante :  
+## Installez les dépendances Python avec la commande suivante (pensez a revenir dans le repertoir de l'app):  
 pip install -r requirements.txt  
 
 ## Installation des dépendances Angular  
